@@ -1,17 +1,23 @@
 <!DOCTYPE html>
-<html lang="en" ng-app="XoXoft_TU_Example">
+<html lang="en" ng-app="myApp">
 <head>
-    <meta charset="UTF-8">
-    <title>XoSoft Example Tertiary User</title>
-    <script src="lib/angular/angular.min.js"></script>
-    <script src="js/controllers.js"></script>
+  <meta charset="UTF-8">
+  <title>XoSoft Example Tertiary User</title>
+  <!-- Libraries -->
+  <script src="lib/angular/angular.min.js"></script>
+  <script src="lib/angular/angular-route.min.js"></script>
+
+  <!-- App code -->
+  <script src="js/app.js"></script>
+  <script src="js/controllers.js"></script>
+
+  <!-- Style: bootstrap -->
+  <link rel="stylesheet" href="css/bootstrap.min.css">
 </head>
 <body>
-    <input type="text" ng-model="name">
-    <h2>Welcome {{name}}</h2>
+<!--    <input type="text" ng-model="name">
+    <h2>Welcome {{name}}</h2>-->
 
-    <div ng-controller="myControoler">
-
-    </div>
+<div class="container" ng-view></div>
 </body>
 </html>
